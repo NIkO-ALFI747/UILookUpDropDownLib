@@ -1,0 +1,28 @@
+﻿syntax = "proto3";
+
+package legacy.v1;
+option csharp_namespace = "Legacy.GrpcContracts";
+
+message UserInfo {
+  int32 user_id = 1;
+  string user_name = 2;
+}
+
+message PackedObject {
+  string clr_type = 1;
+  bytes payload = 2;
+}
+
+message CallProcedureDTRequest {
+  string proc_name = 1;
+  map<string, PackedObject> args = 2;
+  UserInfo user = 3;
+}
+
+message CallProcedureDTResponse {
+  PackedObject packed_data_table = 1;
+}
+
+service LegacyDbService {
+  rpc CallProcedureDT (CallProcedureDTRequest) returns (CallProcedureDTResponse);
+}
