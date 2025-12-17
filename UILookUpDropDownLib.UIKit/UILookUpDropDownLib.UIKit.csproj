@@ -51,6 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LookUpDropDownForm\LookUpDropDownForm.Initialization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LookUpDropDown\LookUpDropDown.ConfigurationData.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="LookUpDropDown\LookUpDropDown.DataBinding.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="LookUpDropDownForm\LookUpDropDownForm.Initialization.resx">
+      <DependentUpon>LookUpDropDownForm.Initialization.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

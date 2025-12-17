@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.c1DropDownControl1 = new C1.Win.C1Input.C1DropDownControl();
-            this.counterpartyLookUpDropDown1 = new UILookUpDropDownLib.DomainUIKit.CounterpartyLookUpDropDown();
             ((System.ComponentModel.ISupportInitialize)(this.c1DropDownControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.counterpartyLookUpDropDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // c1DropDownControl1
@@ -44,29 +42,15 @@
             this.c1DropDownControl1.TabIndex = 0;
             this.c1DropDownControl1.Tag = null;
             // 
-            // counterpartyLookUpDropDown1
-            // 
-            this.counterpartyLookUpDropDown1.AutoSize = false;
-            this.counterpartyLookUpDropDown1.GapHeight = 0;
-            this.counterpartyLookUpDropDown1.ImagePadding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            this.counterpartyLookUpDropDown1.Location = new System.Drawing.Point(233, 13);
-            this.counterpartyLookUpDropDown1.Name = "counterpartyLookUpDropDown1";
-            this.counterpartyLookUpDropDown1.Size = new System.Drawing.Size(200, 16);
-            this.counterpartyLookUpDropDown1.TabIndex = 1;
-            this.counterpartyLookUpDropDown1.Tag = null;
-            this.counterpartyLookUpDropDown1.ViewModel = null;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.counterpartyLookUpDropDown1);
             this.Controls.Add(this.c1DropDownControl1);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.c1DropDownControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.counterpartyLookUpDropDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -74,7 +58,6 @@
         #endregion
 
         private C1.Win.C1Input.C1DropDownControl c1DropDownControl1;
-        private DomainUIKit.CounterpartyLookUpDropDown counterpartyLookUpDropDown1;
     }
 }
 

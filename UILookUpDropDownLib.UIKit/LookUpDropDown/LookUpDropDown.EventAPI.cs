@@ -26,5 +26,7 @@ namespace UILookUpDropDownLib.UIKit.LookUpDropDown
         public event EventHandler<LookUpViewModelChangedEventArgs> LookUpViewModelChanged;
 
         public event EventHandler<PropertyChangingEventArgs<ILookUpDropDownViewModel>> LookUpViewModelChanging;
+
+        public event EventHandler<LookUpDropDownFormClassNameChangedEventArgs> LookUpDropDownFormClassNameChanged;
     }
 }
