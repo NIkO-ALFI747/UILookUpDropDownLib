@@ -12,4 +12,8 @@
     <ProjectReference Include="..\UILookUpDropDownLib.Abstractions\UILookUpDropDownLib.Abstractions.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="LookUpDataGridViewPresenter\" />
+  </ItemGroup>
+
 </Project>

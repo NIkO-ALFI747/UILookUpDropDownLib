@@ -24,5 +24,29 @@ namespace UILookUpDropDownLib.UIKit.Utils
                 DataSourceUpdateMode.OnPropertyChanged
             );
         }
+
+        public void BindGridData<TModel>(ILookUpDataGridViewModel<TModel> viewModel, DataGridView grid)
+        {
+            grid.AutoGenerateColumns = false;
+            grid.Columns.Clear();
+            if (viewModel.ColumnMappings != null)
+            {
+                foreach (var mapping in viewModel.ColumnMappings)
+                {
+                    var col = new DataGridViewTextBoxColumn
+                    {
+                        DataPropertyName = mapping.Key,
+                        HeaderText = mapping.Value,
+                        Name = mapping.Key
+                    };
+                    grid.Columns.Add(col);
+                }
+            }
+            var bindingSource = new BindingSource
+            {
+                DataSource = viewModel.DataCollection
+            };
+            grid.DataSource = bindingSource;
+        }
     }
 }

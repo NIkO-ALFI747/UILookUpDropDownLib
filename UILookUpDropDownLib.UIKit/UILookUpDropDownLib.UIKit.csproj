@@ -51,6 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LookUpDataGridView\LookUpDataGridView.DataBinding.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LookUpDataGridView\LookUpDataGridView.Initialization.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="LookUpDropDownForm\LookUpDropDownForm.Initialization.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="LookUpDataGridView\LookUpDataGridView.Initialization.resx">
+      <DependentUpon>LookUpDataGridView.Initialization.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LookUpDropDownForm\LookUpDropDownForm.Initialization.resx">
       <DependentUpon>LookUpDropDownForm.Initialization.cs</DependentUpon>
     </EmbeddedResource>

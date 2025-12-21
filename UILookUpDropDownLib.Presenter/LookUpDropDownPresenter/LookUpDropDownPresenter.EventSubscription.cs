@@ -1,6 +1,6 @@
 ﻿using UILookUpDropDownLib.Abstractions.Presenter;
 
-namespace UILookUpDropDownLib.Presenter
+namespace UILookUpDropDownLib.Presenter.LookUpDropDownPresenter
 {
     public partial class LookUpDropDownPresenter
     {

@@ -3,7 +3,7 @@ using System;
 using UILookUpDropDownLib.Abstractions.Presenter;
 using UILookUpDropDownLib.Abstractions.View;
 using UILookUpDropDownLib.Abstractions.ViewModel;
-using UILookUpDropDownLib.Presenter;
+using UILookUpDropDownLib.Presenter.LookUpDropDownPresenter;
 using UILookUpDropDownLib.ViewModel;
 
 namespace UILookUpDropDownLib.SharedUtils.DI

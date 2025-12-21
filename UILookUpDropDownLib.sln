@@ -13,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UILookUpDropDownLib.Present
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UILookUpDropDownLib.DomainBackendAPI", "UILookUpDropDownLib.DomainBackendAPI\UILookUpDropDownLib.DomainBackendAPI.csproj", "{C009FAAF-853E-4F8D-973D-2460C9E8560F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UILookUpDropDownLib.Service", "UILookUpDropDownLib.Service\UILookUpDropDownLib.Service.csproj", "{7FA13876-093C-4CA6-9FF9-429BCE4F9B2A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UILookUpDropDownLib.UIKit", "UILookUpDropDownLib.UIKit\UILookUpDropDownLib.UIKit.csproj", "{835C2613-D94F-45C0-B456-B195916E4E1D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UILookUpDropDownLib.SharedUtils", "UILookUpDropDownLib.SharedUtils\UILookUpDropDownLib.SharedUtils.csproj", "{C87BA3C4-E679-427B-9FCC-0179858BB8D1}"
@@ -49,10 +47,6 @@ Global
 		{C009FAAF-853E-4F8D-973D-2460C9E8560F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C009FAAF-853E-4F8D-973D-2460C9E8560F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C009FAAF-853E-4F8D-973D-2460C9E8560F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7FA13876-093C-4CA6-9FF9-429BCE4F9B2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7FA13876-093C-4CA6-9FF9-429BCE4F9B2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7FA13876-093C-4CA6-9FF9-429BCE4F9B2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7FA13876-093C-4CA6-9FF9-429BCE4F9B2A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{835C2613-D94F-45C0-B456-B195916E4E1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{835C2613-D94F-45C0-B456-B195916E4E1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{835C2613-D94F-45C0-B456-B195916E4E1D}.Release|Any CPU.ActiveCfg = Release|Any CPU

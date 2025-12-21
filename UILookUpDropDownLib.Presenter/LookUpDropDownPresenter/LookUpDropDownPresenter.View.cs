@@ -1,7 +1,7 @@
 ﻿using UILookUpDropDownLib.Abstractions.EventArgs;
 using UILookUpDropDownLib.Abstractions.View;
 
-namespace UILookUpDropDownLib.Presenter
+namespace UILookUpDropDownLib.Presenter.LookUpDropDownPresenter
 {
     public partial class LookUpDropDownPresenter
     {
