@@ -4,6 +4,12 @@ namespace UILookUpDropDownLib.UIKit.LookUpDropDownForm
 {
     public class LookUpDropDownForm : DropDownForm
     {
+
+        public LookUpDropDownForm()
+        {
+            InitializeComponent();
+        }
+
         private void InitializeComponent()
         {
             this.SuspendLayout();

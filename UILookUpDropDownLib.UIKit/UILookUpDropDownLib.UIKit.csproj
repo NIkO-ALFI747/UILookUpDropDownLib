@@ -54,6 +54,9 @@
     <Compile Include="LookUpDropDownForm\LookUpDropDownForm.Initialization.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="LookUpDropDown\DefaultLookUpDropDown.Initialization.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="LookUpDropDown\LookUpDropDown.ConfigurationData.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -81,10 +84,17 @@
       <Project>{6073D62B-BD61-4F01-A47A-F379B4732F57}</Project>
       <Name>UILookUpDropDownLib.Abstractions</Name>
     </ProjectReference>
+    <ProjectReference Include="..\UILookUpDropDownLib.SharedUtils\UILookUpDropDownLib.SharedUtils.csproj">
+      <Project>{C87BA3C4-E679-427B-9FCC-0179858BB8D1}</Project>
+      <Name>UILookUpDropDownLib.SharedUtils</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="LookUpDropDownForm\LookUpDropDownForm.Initialization.resx">
       <DependentUpon>LookUpDropDownForm.Initialization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LookUpDropDown\DefaultLookUpDropDown.Initialization.resx">
+      <DependentUpon>DefaultLookUpDropDown.Initialization.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>

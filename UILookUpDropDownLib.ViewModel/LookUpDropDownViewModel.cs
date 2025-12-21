@@ -7,6 +7,7 @@ namespace UILookUpDropDownLib.ViewModel
     public class LookUpDropDownViewModel : ObservableObject, ILookUpDropDownViewModel
     {
         private string _searchText;
+        private string _dropDownFormClassName;
 
         public string SearchText {
             get => _searchText;
@@ -15,6 +16,12 @@ namespace UILookUpDropDownLib.ViewModel
                 SetProperty(ref _searchText, value);
                 Debug.WriteLine($"ViewModel SearchText: {_searchText}");
             }
+        }
+
+        public string DropDownFormClassName
+        {
+            get => _dropDownFormClassName;
+            set => SetProperty(ref _dropDownFormClassName, value);
         }
     }
 }

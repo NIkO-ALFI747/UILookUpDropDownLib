@@ -29,6 +29,8 @@ namespace UILookUpDropDownLib.Abstractions.View
 
         event EventHandler<PropertyChangingEventArgs<ILookUpDropDownViewModel>> LookUpViewModelChanging;
 
+        event EventHandler<LookUpDropDownFormClassNameChangedEventArgs> LookUpDropDownFormClassNameChanged;
+
         void BindData();
     }
 }

@@ -6,12 +6,13 @@ using System.ComponentModel;
 
 namespace UILookUpDropDownLib.DomainUIKit
 {
-    public class CounterpartyLookUpDropDown : LookUpDropDown
+    public class CounterpartyLookUpDropDown : DefaultLookUpDropDown
     {
         private DIContainer DIContainer { get; set; }
 
         public bool IsDesignTime() =>
-            LicenseManager.UsageMode == LicenseUsageMode.Designtime;
+            LicenseManager.UsageMode == LicenseUsageMode.Designtime ||
+            DesignMode;
 
         public CounterpartyLookUpDropDown()
         {

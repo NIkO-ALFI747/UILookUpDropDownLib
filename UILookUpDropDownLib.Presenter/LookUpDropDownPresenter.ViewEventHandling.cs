@@ -57,5 +57,13 @@ namespace UILookUpDropDownLib.Presenter
         {
             if (e.OldValue == e.NewValue) e.Cancel = true;
         }
+
+        private void OnLookUpDropDownFormClassNameChanged(object sender, LookUpDropDownFormClassNameChangedEventArgs e)
+        {
+            if (PropertyValidator.IsDesignTime() ||
+                string.IsNullOrEmpty(e.NewLookUpDropDownFormClassName)
+                ) return;
+            ViewModel.DropDownFormClassName = e.NewLookUpDropDownFormClassName;
+        }
     }
 }

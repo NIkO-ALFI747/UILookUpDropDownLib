@@ -16,6 +16,7 @@ namespace UILookUpDropDownLib.Presenter
             view.LookUpPreviewKeyDown += OnLookUpPreviewKeyDown;
             view.LookUpViewModelChanged += OnLookUpViewModelChanged;
             view.LookUpViewModelChanging += OnLookUpViewModelChanging;
+            view.LookUpDropDownFormClassNameChanged += OnLookUpDropDownFormClassNameChanged;
         }
     }
 }

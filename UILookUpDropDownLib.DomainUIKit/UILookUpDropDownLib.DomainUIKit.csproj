@@ -167,6 +167,9 @@
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CounterpartyLookUpDropDown.resx">
+      <DependentUpon>CounterpartyLookUpDropDown.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UILookUpDropDownLib.DomainUIKit.gclicx" />
   </ItemGroup>
   <ItemGroup>
