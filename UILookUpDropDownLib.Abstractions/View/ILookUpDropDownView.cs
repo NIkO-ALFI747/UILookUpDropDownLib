@@ -1,13 +1,12 @@
 ﻿using System;
-using UILookUpDropDownLib.Abstractions.EventArgs;
 using UILookUpDropDownLib.Abstractions.View.EventArgs;
-using UILookUpDropDownLib.Abstractions.ViewModel;
+using UILookUpDropDownLib.Abstractions.ViewAdapter;
 
 namespace UILookUpDropDownLib.Abstractions.View
 {
     public interface ILookUpDropDownView
     {
-        ILookUpDropDownViewModel ViewModel { get; set; }
+        ILookUpDropDownViewAdapter LookUpDropDownViewAdapter { get; set; }
 
         event EventHandler BeforeLookUpDropDownOpened;
 
@@ -25,12 +24,6 @@ namespace UILookUpDropDownLib.Abstractions.View
 
         event EventHandler LookUpPreviewKeyDown;
 
-        event EventHandler<LookUpViewModelChangedEventArgs> LookUpViewModelChanged;
-
-        event EventHandler<PropertyChangingEventArgs<ILookUpDropDownViewModel>> LookUpViewModelChanging;
-
         event EventHandler<LookUpDropDownFormClassNameChangedEventArgs> LookUpDropDownFormClassNameChanged;
-
-        void BindData();
     }
 }

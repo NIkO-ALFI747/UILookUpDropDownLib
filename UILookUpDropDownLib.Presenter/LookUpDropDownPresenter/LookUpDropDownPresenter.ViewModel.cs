@@ -1,4 +1,6 @@
-﻿using UILookUpDropDownLib.Abstractions.ViewModel;
+﻿using UILookUpDropDownLib.Abstractions.EventArgs;
+using UILookUpDropDownLib.Abstractions.View.EventArgs;
+using UILookUpDropDownLib.Abstractions.ViewModel;
 
 namespace UILookUpDropDownLib.Presenter.LookUpDropDownPresenter
 {
@@ -11,8 +13,12 @@ namespace UILookUpDropDownLib.Presenter.LookUpDropDownPresenter
             private get => _viewModel;
             set
             {
+                var lookUpViewModelChangingEventArgs = new PropertyChangingEventArgs<ILookUpDropDownViewModel>(_viewModel, value);
+                LookUpViewModelChanging?.Invoke(this, lookUpViewModelChangingEventArgs);
+                if (lookUpViewModelChangingEventArgs.Cancel) return;
                 _viewModel = value;
-                ViewModelChanged?.Invoke(this, System.EventArgs.Empty);
+                var lookUpViewModelChangedEventArgs = new LookUpViewModelChangedEventArgs(_viewModel);
+                LookUpViewModelChanged?.Invoke(this, lookUpViewModelChangedEventArgs);
             }
         }
     }

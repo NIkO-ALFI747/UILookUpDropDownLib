@@ -1,5 +1,6 @@
 ﻿using System.Windows.Forms;
 using UILookUpDropDownLib.Abstractions.View;
+using UILookUpDropDownLib.ViewAdapter;
 
 namespace UILookUpDropDownLib.UIKit.LookUpDataGridView
 {
@@ -8,6 +9,7 @@ namespace UILookUpDropDownLib.UIKit.LookUpDataGridView
         public LookUpDataGridView()
         {
             InitializeComponent();
+            LookUpDataGridViewAdapter = new LookUpDataGridViewAdapter(this);
         }
 
         private void InitializeComponent()

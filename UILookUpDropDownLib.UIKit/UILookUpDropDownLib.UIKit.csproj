@@ -79,7 +79,6 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utils\DataBinder.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
@@ -93,6 +92,10 @@
     <ProjectReference Include="..\UILookUpDropDownLib.SharedUtils\UILookUpDropDownLib.SharedUtils.csproj">
       <Project>{C87BA3C4-E679-427B-9FCC-0179858BB8D1}</Project>
       <Name>UILookUpDropDownLib.SharedUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UILookUpDropDownLib.ViewAdapter\UILookUpDropDownLib.ViewAdapter.csproj">
+      <Project>{03D2F733-B73B-425B-890F-7EB2DAD470D3}</Project>
+      <Name>UILookUpDropDownLib.ViewAdapter</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

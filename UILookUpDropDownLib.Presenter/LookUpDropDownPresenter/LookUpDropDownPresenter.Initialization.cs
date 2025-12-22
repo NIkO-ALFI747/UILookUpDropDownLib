@@ -11,6 +11,7 @@ namespace UILookUpDropDownLib.Presenter.LookUpDropDownPresenter
             //IGlobalCounterpartyService globalCounterpartyService
             )
         {
+            IsDataBinded = false;
             PropertyValidator = new PropertyValidator();
             SubscribeInternalEventsToHandlers(this);
             ViewModel = viewModel;

@@ -1,6 +1,6 @@
 ﻿using C1.Win.C1Input;
 using UILookUpDropDownLib.Abstractions.View;
-using UILookUpDropDownLib.UIKit.Utils;
+using UILookUpDropDownLib.ViewAdapter;
 
 namespace UILookUpDropDownLib.UIKit.LookUpDropDown
 {
@@ -9,7 +9,7 @@ namespace UILookUpDropDownLib.UIKit.LookUpDropDown
         public LookUpDropDown()
         {
             InitializeComponent();
-            DataBinder = new DataBinder();
+            LookUpDropDownViewAdapter = new LookUpDropDownViewAdapter(this);
         }
 
         private void InitializeComponent()

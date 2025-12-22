@@ -5,15 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="LookUpDataGridViewPresenter\**" />
+    <EmbeddedResource Remove="LookUpDataGridViewPresenter\**" />
+    <None Remove="LookUpDataGridViewPresenter\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="ErrorOr" Version="2.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\UILookUpDropDownLib.Abstractions\UILookUpDropDownLib.Abstractions.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="LookUpDataGridViewPresenter\" />
   </ItemGroup>
 
 </Project>

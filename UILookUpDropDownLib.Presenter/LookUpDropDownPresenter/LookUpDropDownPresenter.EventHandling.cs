@@ -1,5 +1,7 @@
 ﻿using UILookUpDropDownLib.Abstractions.EventArgs;
 using UILookUpDropDownLib.Abstractions.View;
+using UILookUpDropDownLib.Abstractions.View.EventArgs;
+using UILookUpDropDownLib.Abstractions.ViewModel;
 
 namespace UILookUpDropDownLib.Presenter.LookUpDropDownPresenter
 {
@@ -15,16 +17,24 @@ namespace UILookUpDropDownLib.Presenter.LookUpDropDownPresenter
         {
             if (View == null) return;
             SubscribeViewEventsToHandlers(View);
-            if (View.ViewModel != null) return;
-            if (ViewModel == null) return;
-            View.ViewModel = ViewModel;
+            if (ViewModel == null ||
+                IsDataBinded) return;
+            View.LookUpDropDownViewAdapter.BindData(ViewModel);
+            IsDataBinded = true;
         }
 
-        private void OnViewModelChanged(object sender, System.EventArgs e)
+        private void OnLookUpViewModelChanged(object sender, LookUpViewModelChangedEventArgs e)
         {
-            if (ViewModel == null) return;
-            if (View == null) return;
-            View.ViewModel = ViewModel;
+            if (e.NewViewModel == null) return;
+            if (View == null ||
+                IsDataBinded) return;
+            View.LookUpDropDownViewAdapter.BindData(e.NewViewModel);
+            IsDataBinded = true;
+        }
+
+        private void OnLookUpViewModelChanging(object sender, PropertyChangingEventArgs<ILookUpDropDownViewModel> e)
+        {
+            if (e.OldValue == e.NewValue) e.Cancel = true;
         }
     }
 }

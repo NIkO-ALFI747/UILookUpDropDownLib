@@ -1,6 +1,8 @@
 ﻿using System;
 using UILookUpDropDownLib.Abstractions.EventArgs;
 using UILookUpDropDownLib.Abstractions.View;
+using UILookUpDropDownLib.Abstractions.View.EventArgs;
+using UILookUpDropDownLib.Abstractions.ViewModel;
 
 namespace UILookUpDropDownLib.Abstractions.Presenter
 {
@@ -12,6 +14,8 @@ namespace UILookUpDropDownLib.Abstractions.Presenter
 
         event EventHandler ViewChanged;
 
-        event EventHandler ViewModelChanged;
+        event EventHandler<LookUpViewModelChangedEventArgs> LookUpViewModelChanged;
+
+        event EventHandler<PropertyChangingEventArgs<ILookUpDropDownViewModel>> LookUpViewModelChanging;
     }
 }

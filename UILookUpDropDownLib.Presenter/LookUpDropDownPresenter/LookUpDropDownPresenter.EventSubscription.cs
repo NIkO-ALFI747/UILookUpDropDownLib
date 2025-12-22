@@ -8,7 +8,8 @@ namespace UILookUpDropDownLib.Presenter.LookUpDropDownPresenter
         {
             presenter.ViewChanging += OnViewChanging;
             presenter.ViewChanged += OnViewChanged;
-            presenter.ViewModelChanged += OnViewModelChanged;
+            presenter.LookUpViewModelChanging += OnLookUpViewModelChanging;
+            presenter.LookUpViewModelChanged += OnLookUpViewModelChanged;
         }
     }
 }

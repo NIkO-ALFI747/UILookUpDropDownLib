@@ -47,17 +47,6 @@ namespace UILookUpDropDownLib.Presenter.LookUpDropDownPresenter
 
         }
 
-        private void OnLookUpViewModelChanged(object sender, LookUpViewModelChangedEventArgs e)
-        {
-            if (e.NewViewModel == null) return;
-            View.BindData();
-        }
-
-        private void OnLookUpViewModelChanging(object sender, PropertyChangingEventArgs<ILookUpDropDownViewModel> e)
-        {
-            if (e.OldValue == e.NewValue) e.Cancel = true;
-        }
-
         private void OnLookUpDropDownFormClassNameChanged(object sender, LookUpDropDownFormClassNameChangedEventArgs e)
         {
             if (PropertyValidator.IsDesignTime() ||

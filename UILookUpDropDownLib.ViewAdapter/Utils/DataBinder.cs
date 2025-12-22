@@ -2,9 +2,9 @@
 using System.Windows.Forms;
 using UILookUpDropDownLib.Abstractions.ViewModel;
 
-namespace UILookUpDropDownLib.UIKit.Utils
+namespace UILookUpDropDownLib.ViewAdapter.Utils
 {
-    internal class DataBinder
+    public class DataBinder
     {
         public void BindData(ILookUpDropDownViewModel viewModel, C1DropDownControl c1DropDownControl)
         {
