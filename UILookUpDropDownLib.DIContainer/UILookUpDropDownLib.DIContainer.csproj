@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UILookUpDropDownLib.Abstractions\UILookUpDropDownLib.Abstractions.csproj" />
+    <ProjectReference Include="..\UILookUpDropDownLib.DomainBackendAPI\UILookUpDropDownLib.DomainBackendAPI.csproj" />
+    <ProjectReference Include="..\UILookUpDropDownLib.Presenter\UILookUpDropDownLib.Presenter.csproj" />
+    <ProjectReference Include="..\UILookUpDropDownLib.ViewModel\UILookUpDropDownLib.ViewModel.csproj" />
+  </ItemGroup>
+
+</Project>

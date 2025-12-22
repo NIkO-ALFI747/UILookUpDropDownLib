@@ -185,6 +185,10 @@
       <Project>{1db338da-342e-47a9-9aa3-fe46df015a28}</Project>
       <Name>UILookUpDropDownLib.BackendAPI</Name>
     </ProjectReference>
+    <ProjectReference Include="..\UILookUpDropDownLib.DIContainer\UILookUpDropDownLib.DIContainer.csproj">
+      <Project>{10de7307-3dc1-4f4d-aaeb-6c034a93acec}</Project>
+      <Name>UILookUpDropDownLib.DIContainer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UILookUpDropDownLib.Presenter\UILookUpDropDownLib.Presenter.csproj">
       <Project>{661816b5-949c-4418-9ff9-d54e26fca8c4}</Project>
       <Name>UILookUpDropDownLib.Presenter</Name>

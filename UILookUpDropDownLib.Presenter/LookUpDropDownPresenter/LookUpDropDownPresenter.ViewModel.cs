@@ -1,6 +1,6 @@
 ﻿using UILookUpDropDownLib.Abstractions.EventArgs;
-using UILookUpDropDownLib.Abstractions.View.EventArgs;
 using UILookUpDropDownLib.Abstractions.ViewModel;
+using UILookUpDropDownLib.Abstractions.ViewModel.EventArgs;
 
 namespace UILookUpDropDownLib.Presenter.LookUpDropDownPresenter
 {

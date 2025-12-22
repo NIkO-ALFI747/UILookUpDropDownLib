@@ -1,14 +1,14 @@
 ﻿using System.Collections.Generic;
-using UILookUpDropDownLib.SharedUtils.DI;
 using UILookUpDropDownLib.UIKit.LookUpDropDown;
 using UILookUpDropDownLib.BackendAPI.DIContainer;
 using System.ComponentModel;
+using UILookUpDropDownLib.Abstractions.DomainUIModels;
 
 namespace UILookUpDropDownLib.DomainUIKit
 {
     public class CounterpartyLookUpDropDown : DefaultLookUpDropDown
     {
-        private DIContainer DIContainer { get; set; }
+        private DIContainer.DI.DIContainer<GlobalCounterpartyLookUp> DIContainer { get; set; }
 
         public bool IsDesignTime() =>
             LicenseManager.UsageMode == LicenseUsageMode.Designtime ||
@@ -18,7 +18,7 @@ namespace UILookUpDropDownLib.DomainUIKit
         {
             if (IsDesignTime()) return;
             BackendAPIBootstrapper.Initialize();
-            DIContainer = new DIContainer();
+            DIContainer = new DIContainer.DI.DIContainer<GlobalCounterpartyLookUp>();
             DIContainer.Configure(this);
             var dbService = BackendAPIAccessor.DbService;
             dbService.CallProcedure("GetData", new Dictionary<string, object>());

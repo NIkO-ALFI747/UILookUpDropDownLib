@@ -1,6 +1,4 @@
-﻿using UILookUpDropDownLib.Abstractions.ViewModel;
-
-namespace UILookUpDropDownLib.Abstractions.View.EventArgs
+﻿namespace UILookUpDropDownLib.Abstractions.ViewModel.EventArgs
 {
     public class LookUpViewModelChangedEventArgs : System.EventArgs
     {

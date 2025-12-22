@@ -7,15 +7,13 @@ namespace UILookUpDropDownLib.Presenter.LookUpDropDownPresenter
     public partial class LookUpDropDownPresenter : ILookUpDropDownPresenter
     {
         public LookUpDropDownPresenter(
-            ILookUpDropDownViewModel viewModel //,
-            //IGlobalCounterpartyService globalCounterpartyService
+            ILookUpDropDownViewModel viewModel
             )
         {
             IsDataBinded = false;
             PropertyValidator = new PropertyValidator();
             SubscribeInternalEventsToHandlers(this);
             ViewModel = viewModel;
-            //GlobalCounterpartyService = globalCounterpartyService;
         }
     }
 }
